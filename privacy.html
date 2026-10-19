@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="meta-title">隱私權政策 · 心象天工 MindCraft Zen</title>
+  <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <style>
+    :root {
+      --bg: #0b0e14;
+      --card-bg: rgba(255, 255, 255, 0.04);
+      --card-border: rgba(255, 255, 255, 0.09);
+      --gold: #d4af37;
+      --gold-light: #f5e6a8;
+      --cinnabar: #b8332a;
+      --text: #f5f5f7;
+      --text-muted: rgba(255, 255, 255, 0.65);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans", "Apple SD Gothic Neo", sans-serif;
+      line-height: 1.8;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 14, 20, 0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--card-border);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .lang-select {
+      background: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      border: 1px solid var(--card-border);
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 13px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    /* Content */
+    .privacy-content {
+      padding: 60px 0 80px;
+    }
+    .badge-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.25);
+      margin-bottom: 24px;
+    }
+    .date-badge {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: clamp(26px, 4vw, 36px);
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+    .summary-card {
+      background: rgba(212, 175, 55, 0.07);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 40px;
+      font-size: 15px;
+      color: var(--gold-light);
+      line-height: 1.8;
+    }
+    .section-block {
+      margin-bottom: 36px;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 8px;
+    }
+    p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.85);
+      white-space: pre-line;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 40px 0;
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav-inner">
+      <a href="index.html" class="back-btn" id="back-to-home">← 返回首頁</a>
+      <select class="lang-select" id="lang-select" onchange="changeLanguage(this.value)">
+        <option value="zh-Hant">繁體中文</option>
+        <option value="zh-Hans">简体中文</option>
+        <option value="en">English</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="de">Deutsch</option>
+        <option value="fr">Français</option>
+        <option value="es">Español</option>
+        <option value="vi">Tiếng Việt</option>
+        <option value="th">ไทย</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="privacy-content">
+    <div class="container">
+      <img src="assets/app_icon.png" alt="MindCraft Zen App Icon" class="badge-icon">
+      <div class="date-badge" id="last-updated">最後更新日期：2026 年 10 月 19 日</div>
+      <h1 id="title">心象天工 (MindCraft Zen) 隱私權保護政策</h1>
+
+      <div class="summary-card" id="summary">
+        我們堅信，隱私是一項基本人權。在《心象天工》中，我們將「極致隱私」融入應用的每一行代碼。本應用遵循 100% 端側運算架構，絕不收集、追蹤、儲存或向任何第三方伺服器傳輸您的個人識別資訊、遊戲進度或生物特徵數據。
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-1-title">1. 100% 端側神經網路與數據本地化</h2>
+        <p id="sec-1-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-2-title">2. TrueDepth 原深感測相機與視線專注追蹤</h2>
+        <p id="sec-2-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-3-title">3. Apple HealthKit 與心率變異度 (HRV) 數據</h2>
+        <p id="sec-3-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-4-title">4. Apple StoreKit 2 交易與訂閱安全</h2>
+        <p id="sec-4-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-5-title">5. 零第三方追蹤與零廣告 SDK</h2>
+        <p id="sec-5-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-6-title">6. 兒童隱私保護 (COPPA & GDPR-K)</h2>
+        <p id="sec-6-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-7-title">7. 數據刪除與完全控制權</h2>
+        <p id="sec-7-body"></p>
+      </div>
+
+      <div class="section-block">
+        <h2 id="sec-8-title">8. 條款協議與聯絡支援</h2>
+        <p id="sec-8-body"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Copyright © 2026 MindCraft Zen Team. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const privacyTranslations = {"zh-Hant": {"page_title": "隱私權政策 · 心象天工 MindCraft Zen", "back_to_home": "← 返回首頁", "last_updated": "最後更新日期：2026 年 10 月 19 日", "title": "心象天工 (MindCraft Zen) 隱私權保護政策", "summary": "我們堅信，隱私是一項基本人權。在《心象天工》中，我們將「極致隱私」融入應用的每一行代碼。本應用遵循 100% 端側運算架構，絕不收集、追蹤、儲存或向任何第三方伺服器傳輸您的個人識別資訊、遊戲進度或生物特徵數據。", "sec_1_title": "1. 100% 端側神經網路與數據本地化", "sec_1_body": "《心象天工》的所有 3D 空間解算、AI 殘局演算法生成、物理模擬與圖像渲染，均 100% 於您手持的 Apple 設備（A 系列 / M 系列晶片之 Neural Engine）本地即時運算。應用程式不依賴外部伺服器連線，離線狀態下亦可完整暢玩所有功能。您的遊戲存檔與歷史成就僅保存在設備沙盒或您個人專屬的私人 iCloud 容器中，我們無法也不會讀取任何內容。", "sec_2_title": "2. TrueDepth 原深感測相機與視線專注追蹤", "sec_2_body": "若您在應用中主動啟用「視線專注引導」功能，應用將透過 Apple TrueDepth 前置鏡頭與 Vision Framework 即時評估您的視線凝神程度，藉此動態微調背景光影與環境白噪音。\n\n我們在此鄭重聲明：\n• 視線計算為即時、短暫的端側記憶體矩陣運算，絕不錄製、儲存或截取任何照片、影片或面部幾何網格特徵。\n• 相機數據永遠不會離開您的本機設備，更絕不傳輸至任何雲端伺服器或第三方機構。\n• 您可隨時在「心智工坊」或 iOS 系統「設定 > 隱私權」中關閉相機存取權限，關閉後不影響其他遊戲核心玩法。", "sec_3_title": "3. Apple HealthKit 與心率變異度 (HRV) 數據", "sec_3_body": "若您配戴 Apple Watch 並在應用中主動授權 HealthKit 存取權限，《心象天工》僅讀取您的「心率變異度」(Heart Rate Variability, HRV) 樣本，用於在解題前後為您呈現自律神經放鬆與專注心流指數。\n\n依據 Apple 審核規範與 HealthKit 嚴格保護標準：\n• 健康數據僅於本機記憶體中短暫分析，絕不上傳至任何外部伺服器。\n• 我們嚴格禁止且絕不會將您的 HealthKit 數據出售給廣告商、數據代理商或任何第三方市場行銷機構。\n• 您可隨時在 iOS「健康」應用或系統「設定 > 隱私權 > 健康」中撤銷存取授權。", "sec_4_title": "4. Apple StoreKit 2 交易與訂閱安全", "sec_4_body": "《心象天工》的應用內購買 (In-App Purchase) 與會員訂閱完全由 Apple 官方 StoreKit 2 框架直接處理。所有交易均透過您的 Apple ID 完成，採用 Apple 的銀行級加密保護。\n我們無法獲取、存儲或接觸您的信用卡號碼、銀行帳戶、帳單地址或真實身份資訊。所有關於自動續期、方案變更與取消訂閱，均由您在 iOS「設定 > Apple ID > 訂閱項目」中完全自主掌控。", "sec_5_title": "5. 零第三方追蹤與零廣告 SDK", "sec_5_body": "《心象天工》不包含任何第三方數據分析 SDK（例如 Google Analytics、Firebase Analytics 等），亦不包含任何第三方廣告行銷追蹤插件。我們絕不進行跨應用追蹤 (App Tracking Transparency)，亦不產生或收集 IDFA (廣告識別碼)。", "sec_6_title": "6. 兒童隱私保護 (COPPA & GDPR-K)", "sec_6_body": "《心象天工》是一款適合全年齡層沉浸的益智文化與專注應用。我們嚴格遵守美國《兒童在線隱私保護法》(COPPA) 及歐盟《通用數據保護條例》(GDPR)。我們不會刻意收集未成年人的任何個人資訊。若家長發現任何疑問，請隨時聯絡我們，我們將第一時間全力協助。", "sec_7_title": "7. 數據刪除與完全控制權", "sec_7_body": "您對自己的數據擁有 100% 的最高控制權。若您需要徹底刪除所有本機進度，只需在應用內的「設定」中點擊「重置所有進度」，或直接從您的 iOS 設備中解除安裝應用程式，所有本地沙盒數據即刻永久清除。", "sec_8_title": "8. 條款協議與聯絡支援", "sec_8_body": "本應用的使用同時遵循 Apple 官方標準最終用戶許可協議 (Standard EULA)。\n\n如果您對本隱私權政策有任何疑問、建議或需要技術支援，歡迎隨時透過電子郵件與我們的獨立開發團隊聯繫：\n官方電子郵件：howly7777777@gmail.com\n官方專案網址：https://howly7777777-svg.github.io/mindcraft"}, "zh-Hans": {"page_title": "隐私政策 · 心象天工 MindCraft Zen", "back_to_home": "← 返回首页", "last_updated": "最后更新日期：2026 年 10 月 19 日", "title": "心象天工 (MindCraft Zen) 隐私保护政策", "summary": "我们坚信，隐私是一项基本人权。在《心象天工》中，我们将“极致隐私”融入应用的每一行代码。本应用遵循 100% 端侧运算架构，绝不收集、追踪、储存或向任何第三方服务器传输您的个人识别信息、游戏进度或生物特征数据。", "sec_1_title": "1. 100% 端侧神经网络与数据本地化", "sec_1_body": "《心象天工》的所有 3D 空间解算、AI 残局算法生成、物理模拟与图像渲染，均 100% 于您手持的 Apple 设备（A 系列 / M 系列芯片之 Neural Engine）本地即时运算。应用程序不依赖外部服务器连线，离线状态下亦可完整畅玩所有功能。您的游戏存档与历史成就仅保存在设备沙盒或您个人专属的私人 iCloud 容器中，我们无法也不会读取任何内容。", "sec_2_title": "2. TrueDepth 原深感测相机与视线专注追踪", "sec_2_body": "若您在应用中主动启用“视线专注引导”功能，应用将透过 Apple TrueDepth 前置镜头与 Vision Framework 即时评估您的视线凝神程度，藉此动态微调背景光影与环境白噪音。\n\n我们在此郑重声明：\n• 视线计算为即时、短暂的端侧记忆体矩阵运算，绝不录制、储存或截取任何照片、视频或面部几何网格特征。\n• 相机数据永远不会离开您的本机设备，更绝不传输至任何云端服务器或第三方机构。\n• 您可随时在“心智工坊”或 iOS 系统“设置 > 隐私”中关闭相机访问权限，关闭后不影响其他游戏核心玩法。", "sec_3_title": "3. Apple HealthKit 与心率变异度 (HRV) 数据", "sec_3_body": "若您配戴 Apple Watch 并在应用中主动授权 HealthKit 访问权限，《心象天工》仅读取您的“心率变异度”(Heart Rate Variability, HRV) 样本，用于在解题前后为您呈现自律神经放松与专注心流指数。\n\n依据 Apple 审核规范与 HealthKit 严格保护标准：\n• 健康数据仅于本机内存中短暂分析，绝不上传至任何外部服务器。\n• 我们严格禁止且绝不会将您的 HealthKit 数据出售给广告商、数据代理商或任何第三方市场行销机构。\n• 您可随时在 iOS“健康”应用或系统“设置 > 隐私 > 健康”中撤销访问授权。", "sec_4_title": "4. Apple StoreKit 2 交易与订阅安全", "sec_4_body": "《心象天工》的应用内购买 (In-App Purchase) 与会员订阅完全由 Apple 官方 StoreKit 2 框架直接处理。所有交易均透过您的 Apple ID 完成，采用 Apple 的银行级加密保护。\n我们无法获取、存储或接触您的信用卡号码、银行账户、账单地址或真实身份信息。所有关于自动续期、方案变更与取消订阅，均由您在 iOS“设置 > Apple ID > 订阅项目”中完全自主掌控。", "sec_5_title": "5. 零第三方追踪与零广告 SDK", "sec_5_body": "《心象天工》不包含任何第三方数据分析 SDK（例如 Google Analytics、Firebase Analytics 等），亦不包含任何第三方广告行销追踪插件。我们绝不进行跨应用追踪 (App Tracking Transparency)，亦不产生或收集 IDFA (广告识别码)。", "sec_6_title": "6. 儿童隐私保护 (COPPA & GDPR-K)", "sec_6_body": "《心象天工》是一款适合全年龄段沉浸的益智文化与专注应用。我们严格遵守美国《儿童在线隐私保护法》(COPPA) 及欧盟《通用数据保护条例》(GDPR)。我们不会刻意收集未成年人的任何个人信息。若家长发现任何疑问，请随时联络我们，我们将第一时间全力协助。", "sec_7_title": "7. 数据删除与完全控制权", "sec_7_body": "您对自己的数据拥有 100% 的最高控制权。若您需要彻底删除所有本机进度，只需在应用内的“设置”中点击“重置所有进度”，或直接从您的 iOS 设备中卸载应用程序，所有本地沙盒数据即刻永久清除。", "sec_8_title": "8. 条款协议与联络支援", "sec_8_body": "本应用的使用同时遵循 Apple 官方标准最终用户许可协议 (Standard EULA)。\n\n如果您对本隐私政策有任何疑问、建议或需要技术支援，欢迎随时通过电子邮件与我们的独立开发团队联系：\n官方电子邮件：howly7777777@gmail.com\n官方项目网址：https://howly7777777-svg.github.io/mindcraft"}, "en": {"page_title": "Privacy Policy · MindCraft Zen", "back_to_home": "← Back to Home", "last_updated": "Last Updated: October 19, 2026", "title": "MindCraft Zen Privacy Policy", "summary": "We believe that privacy is a fundamental human right. In MindCraft Zen, privacy-by-design is embedded into every line of code. Our app adopts a 100% on-device architecture: we never collect, track, store, or transmit your personal identity, puzzle progress, or biometric data to any external server.", "sec_1_title": "1. 100% On-Device Neural Engine & Local Processing", "sec_1_body": "All 3D spatial calculations, on-device AI endgame synthesis, physics simulations, and visual rendering run entirely on your Apple device's Neural Engine and GPU. MindCraft Zen functions completely offline with zero reliance on cloud servers. Your game saves and unlocked achievements reside exclusively within your local application sandbox or your private Apple iCloud container.", "sec_2_title": "2. TrueDepth Camera & Gaze Focus Guidance", "sec_2_body": "If you explicitly enable 'Gaze Focus Guidance', MindCraft Zen uses Apple's front-facing TrueDepth camera and Vision Framework locally to gauge gaze stability and gently adjust ambient temple lighting and wood white noise.\n\nWe strictly guarantee:\n• Gaze calculations are transient matrix operations in local memory. We never record, photograph, save, or capture any photos, video feeds, or facial geometries.\n• Camera data never leaves your device and is never uploaded to any remote server or third-party entity.\n• You can revoke camera permission at any time in iOS Settings > Privacy & Security > Camera.", "sec_3_title": "3. Apple HealthKit & Heart Rate Variability (HRV)", "sec_3_body": "If you wear an Apple Watch and grant HealthKit read permission, MindCraft Zen accesses only your Heart Rate Variability (HRV) metrics to illustrate your autonomic nervous system calming and mindful flow state before and after sessions.\n\nUnder strict Apple HealthKit review standards:\n• Health data is analyzed strictly in local memory and is never transmitted to any external server.\n• We strictly prohibit and never sell or share your HealthKit data with advertisers, data brokers, or third-party marketing platforms.\n• You can revoke HealthKit permission at any time in iOS Settings > Privacy & Security > Health.", "sec_4_title": "4. Apple StoreKit 2 Transactions & Subscriptions", "sec_4_body": "All in-app purchases and auto-renewing subscriptions are processed directly and securely by Apple StoreKit 2 via your Apple ID. We never have access to, nor do we store, your credit card numbers, billing addresses, or real-world identities. All subscription management, renewals, and cancellations are fully controlled by you in your Apple ID account settings.", "sec_5_title": "5. Zero Third-Party Analytics & Zero Ad SDKs", "sec_5_body": "MindCraft Zen contains zero third-party analytics trackers (such as Google Analytics or Firebase Analytics) and zero advertising SDKs. We do not engage in cross-app tracking (App Tracking Transparency) and do not collect IDFA advertising identifiers.", "sec_6_title": "6. Children's Online Privacy Protection (COPPA & GDPR-K)", "sec_6_body": "MindCraft Zen is designed for users of all ages. We strictly comply with the Children's Online Privacy Protection Act (COPPA) and EU GDPR regulations. We do not knowingly solicit or collect any personal information from minors.", "sec_7_title": "7. Data Deletion & Complete User Control", "sec_7_body": "You retain absolute ownership of your data. You can erase all local progress at any time by selecting 'Reset All Progress' in the in-app settings, or simply by deleting the app from your device, which instantly purges all sandbox data.", "sec_8_title": "8. Terms of Use & Support Contact", "sec_8_body": "Your use of MindCraft Zen is also governed by Apple's Standard End User License Agreement (Standard EULA).\n\nIf you have any questions or feedback regarding this policy, please contact our team at:\nSupport Email: howly7777777@gmail.com\nWebsite: https://howly7777777-svg.github.io/mindcraft"}, "ja": {"page_title": "プライバシーポリシー · 心象天工 MindCraft Zen", "back_to_home": "← ホームに戻る", "last_updated": "最終更新日：2026年10月19日", "title": "心象天工 (MindCraft Zen) プライバシーポリシー", "summary": "私たちは、プライバシーは基本的人権であると信じています。『心象天工』では、100%オンデバイス処理アーキテクチャを採用しており、お客様の個人識別情報、ゲームの進行状況、生体認証データを外部サーバーに収集・追跡・保存することは一切ありません。", "sec_1_title": "1. 100% オンデバイス Neural Engine と完全ローカル処理", "sec_1_body": "『心象天工』におけるすべての3D空間計算、AIパズル生成、物理演算は、お客様がお持ちのAppleデバイス上のNeural EngineおよびGPUで完結します。外部サーバーへの通信は一切不要で、完全オフラインで安心してお楽しみいただけます。セーブデータはお使いの端末のサンドボックスまたはお客様のプライベートなiCloudにのみ安全に保管されます。", "sec_2_title": "2. TrueDepth カメラと視線集中ガイダンス", "sec_2_body": "「視線集中ガイダンス」機能を有効にした場合、TrueDepth 前面カメラを用いてローカルで視線の安定度を測定し、照明や環境音を調和させます。\n\n• 視線計算は一時的なメモリ演算のみで行われ、写真、動画、顔の幾何学的データを記録・保存することは決してありません。\n• カメラデータがお使いのデバイスから外部に送信されることは絶対にありません。\n• iOSの「設定 > プライバシーとセキュリティ > カメラ」からいつでもアクセス権を取り消すことができます。", "sec_3_title": "3. Apple HealthKit と心拍変動 (HRV) データ", "sec_3_body": "Apple Watch をご使用中にお客様が許可された場合、『心象天工』は心拍変動 (HRV) のみをローカルで読み取り、パズル前後の自律神経リラックス度を可視化します。\n\n• ヘルスケアデータは端末内メモリでのみ一時的に分析され、外部サーバーに送信されることはありません。\n• HealthKit データを広告主や第三者に販売・提供することは固く禁じられており、一切行いません。\n• iOSの「設定 > プライバシーとセキュリティ > ヘルスケア」からいつでも許可を取り消せます。", "sec_4_title": "4. Apple StoreKit 2 による安全な決済とサブスクリプション", "sec_4_body": "すべてのアプリ内課金およびサブスクリプションは、Apple公式の StoreKit 2 フレームワークを通じて安全に処理されます。クレジットカード番号や請求先情報が当方に渡ることはありません。更新や解約は、Apple ID のアカウント設定からいつでもお客様ご自身で管理いただけます。", "sec_5_title": "5. サードパーティ製トラッカーおよび広告SDKの排除", "sec_5_body": "『心象天工』には、Google Analytics や Firebase Analytics などの分析トラッカーや、広告SDKは一切含まれていません。アプリ間トラッキングや広告識別子 (IDFA) の収集も一切行いません。", "sec_6_title": "6. お子様のプライバシー保護 (COPPA & GDPR-K)", "sec_6_body": "すべての年齢層に安心してご利用いただけるよう設計されています。未成年者から個人情報を意図的に収集することは一切ありません。", "sec_7_title": "7. データ削除と完全な制御権", "sec_7_body": "アプリ内の設定から「すべての進捗をリセット」するか、アプリを削除することで、端末内のすべてのデータをいつでも完全に消去できます。", "sec_8_title": "8. 利用規約およびお問い合わせ", "sec_8_body": "本アプリの利用には、Apple公式の標準使用許諾契約 (Standard EULA) が適用されます。\n\nお問い合わせ窓口：\nメール：howly7777777@gmail.com\n公式ウェブサイト：https://howly7777777-svg.github.io/mindcraft"}, "ko": {"page_title": "개인정보 처리방침 · 심상천공 MindCraft Zen", "back_to_home": "← 홈으로 돌아가기", "last_updated": "최종 수정일: 2026년 10월 19일", "title": "심상천공 (MindCraft Zen) 개인정보 처리방침", "summary": "우리는 개인정보 보호가 기본적인 인권이라고 굳게 믿습니다. '심상천공'은 100% 온디바이스 아키텍처를 채택하여 어떠한 개인 식별 정보, 게임 진행 데이터, 생체 정보를 외부 서버로 수집, 추적, 저장, 전송하지 않습니다.", "sec_1_title": "1. 100% 온디바이스 Neural Engine 및 데이터 로컬 처리", "sec_1_body": "모든 3D 공간 연산, AI 퍼즐 생성, 물리 시뮬레이션은 기기 내부의 Apple Neural Engine 칩에서 독립적으로 실행됩니다. 외부 클라우드 통신에 의존하지 않으며 완벽한 오프라인 플레이가 가능합니다. 저장 데이터는 기기 로컬 샌드박스 또는 사용자의 개인 iCloud 컨테이너에만 안전하게 보관됩니다.", "sec_2_title": "2. TrueDepth 카메라 및 시선 집중 추적 안내", "sec_2_body": "사용자가 '시선 집중 안내' 기능을 활성화한 경우, 전면 TrueDepth 카메라를 통해 시선 안정성을 로컬에서 분석하여 조명과 명상 사운드를 조화롭게 조절합니다.\n\n• 시선 계산은 기기 메모리 내에서 일시적으로만 수행되며 사진, 동영상, 안면 기하 데이터를 일체 저장하거나 녹화하지 않습니다.\n• 카메라 데이터는 기기 외부로 절대 전송되지 않습니다.\n• iOS '설정 > 개인정보 보호 및 보안 > 카메라'에서 언제든 권한을 취소할 수 있습니다.", "sec_3_title": "3. Apple HealthKit 및 심박변이도 (HRV) 데이터", "sec_3_body": "사용자의 허가를 받은 경우에 한해 심박변이도(HRV) 데이터를 로컬에서 읽어 퍼즐 풀이 전후 자율신경 이완 지수를 분석합니다.\n\n• 건강 데이터는 기기 메모리에서만 일시적으로 분석되며 외부 서버로 전송되지 않습니다.\n• HealthKit 데이터를 광고주나 제3자에게 판매하거나 제공하지 않습니다.\n• iOS '설정 > 개인정보 보호 및 보안 > 건강'에서 언제든 권한을 철회할 수 있습니다.", "sec_4_title": "4. Apple StoreKit 2 결제 및 구독 보안", "sec_4_body": "모든 인앱 구매 및 구독 결제는 Apple StoreKit 2를 통해 직접 처리됩니다. 개발자는 신용카드 정보나 결제 주소에 일체 접근할 수 없으며, 모든 구독 관리는 Apple ID 계정 설정에서 직접 관리하실 수 있습니다.", "sec_5_title": "5. 제3자 분석기 및 광고 SDK 배제", "sec_5_body": "구글 애널리틱스 등 제3자 추적 SDK나 광고 SDK를 일체 포함하지 않으며, 앱 간 추적이나 광고 식별자(IDFA)를 수집하지 않습니다.", "sec_6_title": "6. 어린이 개인정보 보호 (COPPA 준수)", "sec_6_body": "모든 연령층이 안심하고 이용할 수 있는 앱으로서, 미성년자의 개인정보를 의도적으로 수집하지 않습니다.", "sec_7_title": "7. 데이터 삭제 및 통제권", "sec_7_body": "앱 설정 내 '모든 진행 상황 초기화'를 누르거나 앱을 삭제하시면 모든 로컬 데이터가 즉시 영구 삭제됩니다.", "sec_8_title": "8. 이용약관 및 고객지원 문의", "sec_8_body": "본 앱의 이용은 Apple 표준 최종 사용자 사용권 계약(Standard EULA)을 따릅니다.\n\n고객지원 이메일: howly7777777@gmail.com\n웹사이트: https://howly7777777-svg.github.io/mindcraft"}, "de": {"page_title": "Datenschutzerklärung · MindCraft Zen", "back_to_home": "← Zurück zur Startseite", "last_updated": "Zuletzt aktualisiert: 19. Oktober 2026", "title": "MindCraft Zen Datenschutzerklärung", "summary": "Wir sind überzeugt, dass Privatsphäre ein grundlegendes Menschenrecht ist. MindCraft Zen basiert auf einer 100%igen On-Device-Architektur: Wir erfassen, verfolgen, speichern oder übertragen niemals personenbezogene Daten, Spielfortschritte oder biometrische Daten an externe Server.", "sec_1_title": "1. 100% On-Device Neural Engine & Lokale Datenverarbeitung", "sec_1_body": "Alle 3D-Berechnungen, KI-Puzzle-Generierungen und Physiksimulationen laufen vollständig auf der Neural Engine Ihres Apple-Geräts ab. Die App funktioniert vollkommen offline. Ihre Speicherdaten verbleiben ausschließlich in der lokalen App-Sandbox oder Ihrem privaten iCloud-Container.", "sec_2_title": "2. TrueDepth-Kamera & Blickfokus-Führung", "sec_2_body": "Wenn Sie die 'Blickfokus-Führung' aktivieren, analysiert die TrueDepth-Frontkamera lokal die Blickstabilität, um Beleuchtung und Klang optimal anzupassen.\n\n• Berechnungen erfolgen rein flüchtig im Gerätespeicher; es werden keine Fotos, Videos oder Gesichtsgeometrien gespeichert.\n• Die Kameradaten verlassen niemals Ihr Gerät.\n• Sie können die Berechtigung jederzeit in den iOS-Einstellungen unter 'Datenschutz & Sicherheit > Kamera' widerrufen.", "sec_3_title": "3. Apple HealthKit & Herzfrequenzvariabilität (HRV)", "sec_3_body": "Mit Ihrer ausdrücklichen Genehmigung liest die App ausschließlich Ihre Herzfrequenzvariabilität (HRV) über HealthKit lokal aus, um Entspannungszustände vor und nach dem Lösen darzustellen.\n\n• Gesundheitsdaten werden niemals an externe Server übertragen.\n• Eine Weitergabe oder ein Verkauf von HealthKit-Daten an Werbetreibende ist strengstens ausgeschlossen.\n• Sie können den Zugriff jederzeit in den iOS-Einstellungen widerrufen.", "sec_4_title": "4. Apple StoreKit 2 Abonnements & Zahlungssicherheit", "sec_4_body": "In-App-Käufe und Abonnements werden direkt und sicher von Apple über StoreKit 2 abgewickelt. Wir haben zu keinem Zeitpunkt Zugriff auf Ihre Zahlungsdaten. Die Verwaltung und Kündigung erfolgt bequem über Ihre Apple-ID-Einstellungen.", "sec_5_title": "5. Keine Drittanbieter-Tracker oder Werbe-SDKs", "sec_5_body": "MindCraft Zen enthält keinerlei Analyse-Tracker von Drittanbietern und keine Werbe-SDKs. Es findet kein App-übergreifendes Tracking statt.", "sec_6_title": "6. Schutz der Privatsphäre von Kindern (COPPA & DSGVO)", "sec_6_body": "Unsere App richtet sich an alle Altersgruppen und sammelt wissentlich keinerlei Daten von Minderjährigen.", "sec_7_title": "7. Datenlöschung & Vollständige Kontrolle", "sec_7_body": "Sie können alle lokalen Daten jederzeit in den App-Einstellungen über 'Fortschritt zurücksetzen' oder durch Deinstallation der App restlos löschen.", "sec_8_title": "8. Nutzungsbedingungen & Support-Kontakt", "sec_8_body": "Die Nutzung unterliegt der Apple Standard-EULA.\n\nSupport-Kontakt: howly7777777@gmail.com\nWebsite: https://howly7777777-svg.github.io/mindcraft"}, "fr": {"page_title": "Politique de Confidentialité · MindCraft Zen", "back_to_home": "← Retour à l'accueil", "last_updated": "Dernière mise à jour : 19 octobre 2026", "title": "Politique de Confidentialité de MindCraft Zen", "summary": "Nous croyons que la vie privée est un droit fondamental. MindCraft Zen fonctionne selon une architecture 100% sur l'appareil : nous ne collectons, ne traquons, ne stockons et ne transmettons aucune donnée personnelle ou biométrique à des serveurs tiers.", "sec_1_title": "1. Traitement 100% Local & Neural Engine sur l'appareil", "sec_1_body": "Tous les calculs géométriques en 3D et la génération de casse-têtes par IA s'exécutent entièrement sur la puce de votre appareil Apple. L'application est totalement utilisable hors ligne. Vos données de sauvegarde sont stockées uniquement dans le bac à sable local de votre appareil ou dans votre compte iCloud privé.", "sec_2_title": "2. Caméra TrueDepth & Suivi de Concentration Visuelle", "sec_2_body": "Si vous activez le 'Guidage Visuel', la caméra avant TrueDepth évalue localement la stabilité de votre regard pour harmoniser la lumière et les sons d'ambiance.\n\n• Les calculs sont éphémères en mémoire vive locale. Aucune photo, vidéo ou géométrie faciale n'est jamais enregistrée.\n• Les données de la caméra ne quittent jamais votre appareil.\n• Vous pouvez révoquer l'autorisation à tout moment dans Réglages > Confidentialité > Appareil photo.", "sec_3_title": "3. Apple HealthKit & Variabilité de la Fréquence Cardiaque (VRC)", "sec_3_body": "Avec votre accord explicite, MindCraft Zen lit uniquement les données de Variabilité de la Fréquence Cardiaque (VRC) via HealthKit pour illustrer votre relaxation avant et après chaque session.\n\n• Les données de santé ne sont jamais transmises à aucun serveur externe.\n• Nous ne vendons ni ne partageons jamais vos données de santé avec des tiers.\n• Vous pouvez révoquer l'accès à tout moment dans Réglages > Santé.", "sec_4_title": "4. Sécurité des Paiements StoreKit 2 d'Apple", "sec_4_body": "Tous les achats intégrés et abonnements sont gérés directement par Apple StoreKit 2 via votre compte Apple ID. Nous n'avons aucun accès à vos coordonnées bancaires. Vous pouvez gérer ou résilier vos abonnements à tout moment dans vos réglages Apple ID.", "sec_5_title": "5. Zéro Traqueur Tiers & Zéro SDK Publicitaire", "sec_5_body": "MindCraft Zen ne contient aucun SDK d'analyse tiers ni aucun module publicitaire. Nous ne pratiquons aucun suivi inter-applications.", "sec_6_title": "6. Protection de l'Enfance (COPPA & RGPD-K)", "sec_6_body": "Notre application est sûre pour tous les âges et ne collecte aucune donnée auprès des mineurs.", "sec_7_title": "7. Suppression des Données & Contrôle Total", "sec_7_body": "Vous pouvez réinitialiser toutes les données dans les réglages de l'application ou en supprimant l'application de votre appareil.", "sec_8_title": "8. Conditions d'Utilisation & Assistance", "sec_8_body": "L'utilisation est soumise au contrat de licence standard Apple (Standard EULA).\n\nContact support : howly7777777@gmail.com\nSite web : https://howly7777777-svg.github.io/mindcraft"}, "es": {"page_title": "Política de Privacidad · MindCraft Zen", "back_to_home": "← Volver al inicio", "last_updated": "Última actualización: 19 de octubre de 2026", "title": "Política de Privacidad de MindCraft Zen", "summary": "Creemos firmemente que la privacidad es un derecho humano fundamental. MindCraft Zen opera con una arquitectura 100% en el dispositivo: nunca recopilamos, rastreamos, almacenamos ni transmitimos tus datos personales, progreso o información biométrica a servidores externos.", "sec_1_title": "1. 100% Neural Engine en el Dispositivo y Procesamiento Local", "sec_1_body": "Todos los cálculos 3D y la generación de acertijos se ejecutan en el chip de tu dispositivo Apple. La aplicación funciona sin conexión a internet. Tus datos de guardado se mantienen exclusivamente en el almacenamiento local seguro de tu dispositivo o en tu contenedor privado de iCloud.", "sec_2_title": "2. Cámara TrueDepth y Seguimiento de Concentración Visual", "sec_2_body": "Si activas la 'Guía Visual', la cámara TrueDepth frontal evalúa localmente la estabilidad de tu mirada para calibrar la iluminación y el sonido ambiente.\n\n• Los cálculos son temporales en memoria. No se guardan ni graban fotos, videos ni geometrías faciales.\n• Los datos nunca salen de tu dispositivo.\n• Puedes revocar el permiso en cualquier momento desde Ajustes > Privacidad > Cámara.", "sec_3_title": "3. Apple HealthKit y Variabilidad de Frecuencia Cardíaca (VFC)", "sec_3_body": "Con tu autorización, la app lee únicamente la Variabilidad de la Frecuencia Cardíaca (VFC) a través de HealthKit para mostrar tu nivel de calma antes y después de resolver los acertijos.\n\n• Los datos de salud jamás se envían a servidores externos.\n• Nunca compartimos ni vendemos tus datos de salud a anunciantes o terceros.\n• Puedes revocar el acceso en cualquier momento desde Ajustes > Privacidad > Salud.", "sec_4_title": "4. Seguridad en Pagos y Suscripciones con StoreKit 2", "sec_4_body": "Las compras dentro de la app y las suscripciones son procesadas directamente por Apple mediante StoreKit 2 con tu Apple ID. No tenemos acceso a tus datos de pago. Puedes administrar o cancelar tu suscripción desde los ajustes de tu Apple ID.", "sec_5_title": "5. Cero Rastreadores de Terceros y Cero SDKs Publicitarios", "sec_5_body": "MindCraft Zen no incluye herramientas de análisis de terceros ni SDKs de publicidad. No realizamos seguimiento entre apps ni recopilamos el identificador IDFA.", "sec_6_title": "6. Protección de la Privacidad Infantil (COPPA)", "sec_6_body": "Nuestra aplicación es apta para todas las edades y no recopila deliberadamente información de menores.", "sec_7_title": "7. Eliminación de Datos y Control Absoluto", "sec_7_body": "Puedes restablecer tu progreso en los ajustes de la aplicación o desinstalar la app para borrar todos los datos locales al instante.", "sec_8_title": "8. Términos de Uso y Soporte", "sec_8_body": "El uso de la app se rige por el Contrato de Licencia Estándar de Apple (Standard EULA).\n\nContacto de soporte: howly7777777@gmail.com\nSitio web: https://howly7777777-svg.github.io/mindcraft"}, "vi": {"page_title": "Chính Sách Quyền Riêng Tư · MindCraft Zen", "back_to_home": "← Quay lại trang chủ", "last_updated": "Cập nhật lần cuối: 19 tháng 10 năm 2026", "title": "Chính Sách Quyền Riêng Tư Của Tâm Tượng Thiên Công (MindCraft Zen)", "summary": "Chúng tôi tin rằng quyền riêng tư là quyền cơ bản của con người. Tâm Tượng Thiên Công vận hành trên cấu trúc 100% cục bộ trên thiết bị: chúng tôi không bao giờ thu thập, theo dõi, lưu trữ hay chuyển tiếp bất kỳ thông tin cá nhân, tiến trình chơi hay dữ liệu sinh trắc học nào lên máy chủ bên ngoài.", "sec_1_title": "1. 100% Neural Engine Cục Bộ & Xử Lý Dữ Liệu Nội Bộ", "sec_1_body": "Mọi thuật toán tính toán không gian 3D và tạo câu đố AI đều chạy trực tiếp trên chip thiết bị Apple của bạn. Ứng dụng hoạt động hoàn hảo khi ngoại tuyến. Dữ liệu lưu trữ chỉ nằm an toàn trong vùng bảo mật của thiết bị hoặc tài khoản iCloud riêng tư của bạn.", "sec_2_title": "2. Camera TrueDepth & Dẫn Lối Tập Trung Ánh Nhìn", "sec_2_body": "Nếu bạn bật tính năng 'Dẫn Lối Tập Trung Ánh Nhìn', camera TrueDepth phía trước sẽ đánh giá độ ổn định của ánh nhìn trong bộ nhớ tạm để điều chỉnh ánh sáng và âm thanh phù hợp.\n\n• Tính toán hoàn toàn diễn ra trong bộ nhớ tạm; tuyệt đối không chụp ảnh, quay video hay lưu lưới hình học khuôn mặt.\n• Dữ liệu camera không bao giờ rời khỏi thiết bị của bạn.\n• Bạn có thể thu hồi quyền trong Cài đặt > Quyền riêng tư > Camera bất kỳ lúc nào.", "sec_3_title": "3. Apple HealthKit & Độ Biến Thiên Nhịp Tim (HRV)", "sec_3_body": "Khi bạn cho phép, ứng dụng chỉ đọc dữ liệu HRV qua HealthKit để phân tích độ thư giãn và tập trung trước và sau khi giải đố.\n\n• Dữ liệu sức khỏe tuyệt đối không bao giờ tải lên bất kỳ máy chủ nào.\n• Tuyệt đối không chia sẻ hoặc bán dữ liệu HealthKit cho bên thứ ba hoặc nhà quảng cáo.\n• Bạn có thể thu hồi quyền trong Cài đặt > Sức khỏe bất cứ lúc nào.", "sec_4_title": "4. Bảo Mật Thanh Toán & Đăng Ký Gói StoreKit 2 Của Apple", "sec_4_body": "Các giao dịch mua gói và gia hạn đăng ký được xử lý bảo mật trực tiếp bởi Apple thông qua Apple ID của bạn. Chúng tôi không thể truy cập thông tin thẻ tín dụng của bạn. Bạn toàn quyền quản lý hoặc hủy gói trong Cài đặt Apple ID của mình.", "sec_5_title": "5. Không Theo Dõi Bên Thứ Ba & Không SDK Quảng Cáo", "sec_5_body": "Tâm Tượng Thiên Công không chứa bất kỳ SDK phân tích dữ liệu bên thứ ba hay SDK quảng cáo nào. Chúng tôi không theo dõi chéo giữa các ứng dụng.", "sec_6_title": "6. Bảo Vệ Trẻ Em (Tuân Thủ COPPA)", "sec_6_body": "Ứng dụng phù hợp cho mọi lứa tuổi và không cố ý thu thập bất kỳ thông tin nào từ trẻ vị thành niên.", "sec_7_title": "7. Xóa Dữ Liệu & Quyền Kiểm Soát Tuyệt Đối", "sec_7_body": "Bạn có thể thiết lập lại toàn bộ tiến trình trong phần cài đặt của ứng dụng hoặc gỡ bỏ ứng dụng để xóa vĩnh viễn toàn bộ dữ liệu nội bộ.", "sec_8_title": "8. Điều Khoản & Hỗ Trợ", "sec_8_body": "Việc sử dụng tuân theo Thỏa thuận Cấp phép Tiêu chuẩn của Apple (Standard EULA).\n\nLiên hệ hỗ trợ: howly7777777@gmail.com\nTrang web: https://howly7777777-svg.github.io/mindcraft"}, "th": {"page_title": "นโยบายความเป็นส่วนตัว · MindCraft Zen", "back_to_home": "← กลับสู่หน้าหลัก", "last_updated": "ปรับปรุงล่าสุด: 19 ตุลาคม 2026", "title": "นโยบายความเป็นส่วนตัวของ MindCraft Zen", "summary": "เราเชื่อมั่นว่าความเป็นส่วนตัวเป็นสิทธิมนุษยชนขั้นพื้นฐาน MindCraft Zen ทำงานบนสถาปัตยกรรมที่ประมวลผลบนอุปกรณ์ 100% เราไม่เก็บรวบรวม ไม่ติดตาม ไม่จัดเก็บ และไม่ส่งข้อมูลส่วนบุคคล ความคืบหน้าในการเล่น หรือข้อมูลชีวมิติใดๆ ไปยังเซิร์ฟเวอร์ภายนอก", "sec_1_title": "1. การประมวลผลบนอุปกรณ์ 100% ด้วย Neural Engine", "sec_1_body": "การคำนวณ 3 มิติและการสร้างปริศนาทั้งหมดทำงานบนชิปของอุปกรณ์ Apple ของคุณโดยตรง แอปสามารถเล่นแบบออฟไลน์ได้อย่างสมบูรณ์ ข้อมูลความคืบหน้าของคุณจะถูกจัดเก็บไว้เฉพาะในแซนด์บ็อกซ์ของอุปกรณ์หรือในบัญชี iCloud ส่วนตัวของคุณเท่านั้น", "sec_2_title": "2. กล้อง TrueDepth และระบบนำทางสมาธิด้วยสายตา", "sec_2_body": "หากคุณเปิดใช้งาน 'ระบบนำทางสมาธิด้วยสายตา' กล้องหน้า TrueDepth จะประเมินความนิ่งของสายตาในหน่วยความจำชั่วคราวเพื่อปรับแสงและเสียงให้เหมาะสม\n\n• การคำนวณทั้งหมดเกิดขึ้นในหน่วยความจำชั่วคราว ไม่มีการบันทึกภาพ วิดีโอ หรือโครงสร้างใบหน้าใดๆ ทั้งสิ้น\n• ข้อมูลกล้องจะไม่ถูกส่งออกจากอุปกรณ์ของคุณโดยเด็ดขาด\n• คุณสามารถเพิกถอนสิทธิ์ได้ตลอดเวลาในการตั้งค่า > ความเป็นส่วนตัว > กล้อง", "sec_3_title": "3. Apple HealthKit และความแปรปรวนของอัตราการเต้นของหัวใจ (HRV)", "sec_3_body": "หากคุณอนุญาต แอปจะอ่านข้อมูล HRV ผ่าน HealthKit เพื่อวิเคราะห์ระดับความผ่อนคลายและสมาธิก่อนและหลังการแก้ปริศนา\n\n• ข้อมูลสุขภาพจะไม่ถูกส่งไปยังเซิร์ฟเวอร์ภายนอกอย่างเด็ดขาด\n• เราไม่ขายหรือแบ่งปันข้อมูล HealthKit กับบุคคลที่สามหรือผู้โฆษณาโดยเด็ดขาด\n• คุณสามารถเพิกถอนสิทธิ์ได้ตลอดเวลาในการตั้งค่า > สุขภาพ", "sec_4_title": "4. ความปลอดภัยในการชำระเงินและสมัครสมาชิกผ่าน StoreKit 2", "sec_4_body": "การซื้อภายในแอปและการสมัครสมาชิกทั้งหมดได้รับการจัดการโดยตรงและปลอดภัยผ่าน Apple StoreKit 2 ด้วย Apple ID ของคุณ เราไม่สามารถเข้าถึงข้อมูลบัตรเครดิตของคุณได้ คุณสามารถจัดการหรือยกเลิกการสมัครได้ตลอดเวลาในการตั้งค่า Apple ID ของคุณ", "sec_5_title": "5. ปราศจากตัวติดตามบุคคลที่สามและ SDK โฆษณา", "sec_5_body": "MindCraft Zen ไม่มี SDK วิเคราะห์ข้อมูลของบุคคลที่สามและไม่มี SDK โฆษณาใดๆ เราไม่มีการติดตามข้ามแอปพลิเคชันอย่างสิ้นเชิง", "sec_6_title": "6. การคุ้มครองความเป็นส่วนตัวของเด็ก (COPPA)", "sec_6_body": "แอปพลิเคชันของเราปลอดภัยสำหรับทุกช่วงวัย และไม่มีการเก็บรวบรวมข้อมูลส่วนบุคคลจากผู้เยาว์โดยเจตนา", "sec_7_title": "7. การลบข้อมูลและการควบคุมอย่างสมบูรณ์", "sec_7_body": "คุณสามารถรีเซ็ตความคืบหน้าทั้งหมดได้ในการตั้งค่าของแอป หรือถอนการติดตั้งแอปเพื่อลบข้อมูลทั้งหมดออกจากอุปกรณ์ทันที", "sec_8_title": "8. ข้อกำหนดการใช้งานและการติดต่อฝ่ายสนับสนุน", "sec_8_body": "การใช้งานอยู่ภายใต้ข้อตกลงใบอนุญาตมาตรฐานของ Apple (Standard EULA)\n\nอีเมลฝ่ายสนับสนุน: howly7777777@gmail.com\nเว็บไซต์: https://howly7777777-svg.github.io/mindcraft"}};
+
+    function applyLanguage(lang) {
+      const data = privacyTranslations[lang] || privacyTranslations['zh-Hant'];
+      document.documentElement.lang = lang;
+
+      document.getElementById('meta-title').textContent = data.page_title;
+      document.getElementById('back-to-home').textContent = data.back_to_home;
+      document.getElementById('last-updated').textContent = data.last_updated;
+      document.getElementById('title').textContent = data.title;
+      document.getElementById('summary').textContent = data.summary;
+
+      document.getElementById('sec-1-title').textContent = data.sec_1_title;
+      document.getElementById('sec-1-body').textContent = data.sec_1_body;
+
+      document.getElementById('sec-2-title').textContent = data.sec_2_title;
+      document.getElementById('sec-2-body').textContent = data.sec_2_body;
+
+      document.getElementById('sec-3-title').textContent = data.sec_3_title;
+      document.getElementById('sec-3-body').textContent = data.sec_3_body;
+
+      document.getElementById('sec-4-title').textContent = data.sec_4_title;
+      document.getElementById('sec-4-body').textContent = data.sec_4_body;
+
+      document.getElementById('sec-5-title').textContent = data.sec_5_title;
+      document.getElementById('sec-5-body').textContent = data.sec_5_body;
+
+      document.getElementById('sec-6-title').textContent = data.sec_6_title;
+      document.getElementById('sec-6-body').textContent = data.sec_6_body;
+
+      document.getElementById('sec-7-title').textContent = data.sec_7_title;
+      document.getElementById('sec-7-body').textContent = data.sec_7_body;
+
+      document.getElementById('sec-8-title').textContent = data.sec_8_title;
+      document.getElementById('sec-8-body').textContent = data.sec_8_body;
+
+      document.getElementById('lang-select').value = lang;
+      localStorage.setItem('mindcraft_lang', lang);
+    }
+
+    function changeLanguage(lang) {
+      applyLanguage(lang);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const savedLang = localStorage.getItem('mindcraft_lang');
+      if (savedLang && privacyTranslations[savedLang]) {
+        applyLanguage(savedLang);
+        return;
+      }
+      const navLang = navigator.language || navigator.userLanguage || 'zh-Hant';
+      let matched = 'zh-Hant';
+      if (navLang.startsWith('zh-CN') || navLang.startsWith('zh-Hans')) matched = 'zh-Hans';
+      else if (navLang.startsWith('zh')) matched = 'zh-Hant';
+      else if (navLang.startsWith('en')) matched = 'en';
+      else if (navLang.startsWith('ja')) matched = 'ja';
+      else if (navLang.startsWith('ko')) matched = 'ko';
+      else if (navLang.startsWith('de')) matched = 'de';
+      else if (navLang.startsWith('fr')) matched = 'fr';
+      else if (navLang.startsWith('es')) matched = 'es';
+      else if (navLang.startsWith('vi')) matched = 'vi';
+      else if (navLang.startsWith('th')) matched = 'th';
+      applyLanguage(matched);
+    });
+  </script>
+</body>
+</html>
